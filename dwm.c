@@ -2595,9 +2595,10 @@ main(int argc, char *argv[])
 	if (!(dpy = XOpenDisplay(NULL)))
 		die("dwm: cannot open display");
 	checkotherwm();
-	/* startup scripts */
-	system("~/suckless/scripts/wallpaper.sh &");
-
+  /* startup scripts */
+  system("~/suckless/scripts/wall.sh &");
+  system("setxkbmap -layout br");
+  
 	setup();
 #ifdef __OpenBSD__
 	if (pledge("stdio rpath proc exec", NULL) == -1)
