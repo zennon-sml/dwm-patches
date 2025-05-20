@@ -2597,7 +2597,7 @@ main(int argc, char *argv[])
 	checkotherwm();
   /* startup scripts */
   system("~/suckless/scripts/wall.sh &");
-  system("setxkbmap -layout br");
+  system("~/suckless/scripts/base.sh &");
   
 	setup();
 #ifdef __OpenBSD__
