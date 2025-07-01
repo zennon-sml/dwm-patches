@@ -765,6 +765,7 @@ createmon(void)
 	strncpy(m->ltsymbol, layouts[0].symbol, sizeof m->ltsymbol);
 	m->wfsymbol[0] = WFDEFAULT;
 	m->wfsymbol[1] = '\0';
+
 	return m;
 }
 
